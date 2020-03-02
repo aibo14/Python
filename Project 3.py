@@ -23,7 +23,7 @@ aprlogs=open("april.txt", "a+"); maylogs=open("may.txt", "a+"); junlogs=open("ju
 jullogs=open("july.txt", "a+"); auglogs=open("august.txt", "a+"); seplogs=open("september.txt", "a+");
 octlogs=open("october.txt", "a+"); novlogs=open("november.txt", "a+"); declogs=open("december.txt", "a+");   
 
-i=0
+i = 0
 
 countRedirects = 0
 countErrors = 0
