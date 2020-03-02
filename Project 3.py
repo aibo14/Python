@@ -23,7 +23,7 @@ aprlogs=open("april.txt", "a+"); maylogs=open("may.txt", "a+"); junlogs=open("ju
 jullogs=open("july.txt", "a+"); auglogs=open("august.txt", "a+"); seplogs=open("september.txt", "a+")
 octlogs=open("octlogs.txt", "a+"); novlogs=open("november.txt", "a+"); declogs=open("december.txt", "a+")   
 
-i=0
+
 
 redirectCounter = 0
 errorCounter = 0
@@ -33,6 +33,7 @@ data = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 savelog = 'http_access_log'
 
 def file_len(savelog):
+    i=0
     with open (savelog) as f:
         for i, l in enumerate (f):
             pass
