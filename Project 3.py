@@ -64,29 +64,29 @@ if not os.path.isfile(savelog):
     urlretrieve(data, savelog)
 
 
-# Our regex pattern to use later
+
 pattern = r'(.*?) - (.*) \[(.*?)\] \"(.*?) (.*?)\"? (.+?) (.+) (.+)'
 
-# Create a list with each line from the file
+
 lines = open(savelog, 'r').readlines()
 
-# Iterate over the lines (the important part, almost everything is done in this block)
+
 for line in lines:
-    # Match our pattern to the line
+ 
     match = re.match(pattern, line)
 
-    # If there wasn't a match (error with regex), continue with iteration, skip this loop
+   
     if not match:
         continue
 
-    # You can get all the info you need from the match groups we created a second ago
-    # Example:
-    match.group(0) # The original line
-    match.group(3) # The timestamp
+    
+  
+    match.group(0) 
+    match.group(3) 
     timestamp = match.group(3)
     month = timestamp[3:6]
     months_count[month] += 1
-    match.group(7) # The status codes
+    match.group(7)
     
     if (match.group(7)[0] == "3"):
         redirectCounter += 1
