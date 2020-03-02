@@ -29,7 +29,7 @@ countRedirects = 0
 countErrors = 0
 
 data = 'https://s3.amazonaws.com/tcmg476/http_access_log'
-savelog = open('http_access_log', "a+")
+savelog = 'http_access_log'
 
 def file_len(savelog):
   with open (savelog) as f:
