@@ -120,8 +120,8 @@ for line in lines:
     else:
         continue
 print("Request Made")
-print(file_len(LOCAL_FILE))
-totalResponses = file_len(LOCAL_FILE)
+print(file_len(savelog))
+totalResponses = file_len(savelog)
 print("Average number for month:", round(totalResponses/12,2))
 print("Average number for week: ",round(totalResponses/52,2))
 print("Average number for day: ", round(totalResponses/365,2))
